@@ -1,0 +1,6 @@
+Section,Category,Text,Priority
+1,System Requirement,The tool shall be able to capture semi-automatically the requirements included in a document and/or in a model. ?Semi-automatic? means the text has to be formalized beforehand by the user or another dedicated tool.,High
+2,Functional Requirement,The tool shall take into account the successive versions of the documents and models  and update automatically the traceability information presented to the user.,Medium
+2.1,System Requirement,The tool shall be able to consider several requirements definitions created by the user. ,Low
+3,System Requirement,The tool shall generate traceability reports including all or part of the traceability information  using these user-defined templates.  For example  if Safety requirements  Functional requirements and Performance requirements are defined  these formats can be independently defined in the tool.using different syntaxes and formats,Low
+3.1,Functional Requirement,The tool shall allow navigation from the information displayed in the main window and the authoring tool from which the information has been captured,Low
