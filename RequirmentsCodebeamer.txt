@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simple Speedometer</title>
+<style>
+  .speedometer {
+    width: 200px;
+    height: 100px;
+    border: 5px solid #000;
+    border-radius: 100px 100px 0 0;
+    position: relative;
+    overflow: hidden;
+  }
+  .needle {
+    width: 2px;
+    height: 90px;
+    background-color: red;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform-origin: bottom;
+    transform: rotate(45deg);
+  }
+</style>
+</head>
+<body>
+<div class="speedometer">
+  <div class="needle"></div>
+</div>
+
+<script>
+  // Function to update the speedometer needle
+  function updateSpeed(speed) {
+    const needle = document.querySelector('.needle');
+    // Assuming the speed range is 0 to 180
+    const angle = speed * 180 / 100; // Convert speed to an angle
+    needle.style.transform = `rotate(${angle - 90}deg)`;
+  }
+
+  // Example: Update the speedometer to 60
+  updateSpeed(60);
+</script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simple Speedometer</title>
+<style>
+  .speedometer {
+    width: 200px;
+    height: 100px;
+    border: 5px solid #000;
+    border-radius: 100px 100px 0 0;
+    position: relative;
+    overflow: hidden;
+  }
+  .needle {
+    width: 2px;
+    height: 90px;
+    background-color: red;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform-origin: bottom;
+    transform: rotate(45deg);
+  }
+</style>
+</head>
+<body>
+<div class="speedometer">
+  <div class="needle"></div>
+</div>
+
+<script>
+  // Function to update the speedometer needle
+  function updateSpeed(speed) {
+    const needle = document.querySelector('.needle');
+    // Assuming the speed range is 0 to 180
+    const angle = speed * 180 / 100; // Convert speed to an angle
+    needle.style.transform = `rotate(${angle - 90}deg)`;
+  }
+
+  // Example: Update the speedometer to 60
+  updateSpeed(60);
+</script>
+</body>
+</html>
